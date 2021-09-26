@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #03ff7f;
+    --dir-colors: #1b494d;
+}
+.clearfix{
+    clear: both;
+}
+/* start welcome  */
+
+.welcome-lorem{
+    background-color: #1b494d;
+    width: 100%;
+    min-height: 100vh
+}
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%);
+}
+.welcome-lorem .welcome{
+    width: 49%;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%);
+    border-right: 1px solid #EEE;
+   
+}
+.welcome-lorem .welcome h2{
+    width: 75%;
+    color: #FFF;
+}
+.welcome-lorem .welcome span{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #FFF;
+    width: 65%;
+}
+.welcome-lorem .welcome span:hover{
+    color: var(--main-color);
+}
+.welcome-lorem .lorem{
+    width: 49%;
+    float: left;
+    font-size: 20px;
+    line-height: 1.9;
+    width: 48%;
+    color: #DDD;
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%);
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.welcome-lorem .lorem button{
+     outline: 0;
+    color: #FFF;
+    background: none;
+    border: none;
+    font-size: 30px;
+    margin-top: 5px;
+    border-radius: 30px;
+    padding: 0px 20px 0px 20px;
+    text-transform: uppercase;
+}
+@media(max-width:767px){
+    .welcome-lorem .welcome,
+    .welcome-lorem .lorem{
+        float: none;
+        width: 100%;
+        margin:0;
+    }
+    .welcome-lorem .welcome{
+        border-right: none;
+        border-bottom: 1px solid #EEE;
+    }
+    .welcome-lorem{
+        width: 100%;
+        min-height: 775px;
+    }
+    .center {
+        top: 50%;
+        left: 50%;
+        transform: translateY(50%);
+    }
+}
+
+/* end welcome  */
+
+/* start magna  */
+
+.magna{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.magna .magna1:before{
+    content: '';
+    left: 48%;
+    margin-left: -1px;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #1b494d;
+    top: 15px;
+}
+@media(max-width:575px){
+    .magna .magna1:before{
+        content: '';
+        left: 0;
+        margin-left: -1px;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #1b494d;
+        top: 47%;
+        display: none;
+    }
+}
+@media(min-width:576px){
+    .magna .magna1:before{
+        content: '';
+        left: 48%;
+        margin-left: -1px;
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: #1b494d;
+        top: 15px; 
+    }
+}
+.magna .magna1 h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1b494d;
+    text-decoration: underline;
+
+}
+.magna .magna1 p{
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.9;
+    font-size: 17px;
+    color: #1b494d75;
+    margin-bottom: 30px;
+}
+
+.magna .magna1 button {
+    padding: 5px 15px 5px 15px;
+    font-size: 25px;
+    border: 2px solid #DDD;
+    border-radius: 20px;
+    color: #1b494d;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.magna .magna1 button:hover{
+    color: red;
+    background-color: black;
+}
+.magna .magna2 div{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color: #1b494d75;
+}
+.magna .magna2{
+    margin-top: 60px;
+    line-height: 1.9;
+}
+.magna .magna2{
+    display: none;
+}
+
+/* end magna  */
+
+/* srart box-setion  */
+
+.box{
+   background-color: #EEE;
+    margin-top: -16px;
+    margin-bottom: 80px;
+}
+.box .box-section{
+    margin-bottom: 70px;
+}
+.box .box-section .image{
+    width: 48%;
+    float: left;
+    border-right: 2px solid #1b494d75;
+}
+.box .box-section .image img{
+   width: 100%;
+}
+.box .box-section .ipsum{
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 100px;
+}
+@media(max-width:1200px){
+    .box .box-section .image,
+    .box .box-section .ipsum{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .box .box-section .image{
+        border-bottom: 2px solid #1b494d75;
+        border-right: none;
+    }
+    .box .box-section .image img{
+        margin-bottom: 20px;
+    }
+    .box .box-section .ipsum{
+        margin-top: 30px;
+    }
+}
+.box .box-section .ipsum h3{
+color: #1b494d;
+font-size: 35px;
+margin-bottom: 30px;
+text-decoration: underline;
+}
+.box .box-section .ipsum p {
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.9;
+    font-size: 17px;
+    color: #1b494d75;
+    margin-bottom: 30px;
+}
+.box .box-section .ipsum button{
+    padding: 5px 40px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    color: #1b494d;
+}
+.box .box-section .ipsum button:hover{
+    background-color: var(--main-color);
+}
+
+/* end box-section  */
+
+/* start form  */
+
+.orci .form {
+    width: 60%;
+    float: left;
+}
+.orci .icons {
+    width: 40%;
+    float: left;;
+}
+.orci .form h3{
+    color: var(--dir-colors);
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+.orci .form p{
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.9;
+    font-size: 17px;
+    color: #1b494d75;
+    margin-bottom: 30px;
+}
+.orci .form input:first-of-type{
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    border:1px solid#EEE;
+    background-color: #DDD;
+    color: #FFF;
+}
+.orci .form input:last-of-type{
+    width: 49%;
+    border:1px solid#EEE;
+    background-color: #DDD;
+    color: #FFF;
+}
+.orci .form textarea{
+    width: 100%;
+    margin-top: 20px;
+    height: 200px;
+    border:1px solid#EEE;
+    background-color: #DDD;
+    color: #FFF;
+}
+.orci .form input:first-of-type:hover,
+.orci .form input:last-of-type:hover,
+.orci .form textarea:hover{
+    background-color: var(--main-color);
+    color: var(--dir-colors);
+}
+.orci .icons{
+    margin-top: 175px;
+}
+.orci .icons .icon {
+    margin-bottom: 2px;
+}
+.orci .icons .icon i {
+    color: var(--main-color)
+}
+.orci .icons .icon span{
+    font-size: 30px;
+    color: #1b494d75;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.9;
+}
+@media(max-width:991px){
+    .orci .form,
+    .orci .icons{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .orci .icons{
+        margin-top: 0;
+    }
+}
+/* end form  */
